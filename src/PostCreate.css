@@ -1,0 +1,71 @@
+.PostCreate {
+  background-color: #222;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px #00000077;
+  transition: box-shadow 0.2s ease-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.PostCreate:focus-within {
+  box-shadow: 0 0 6px #333;
+}
+
+.PostCreate .close-button {
+  width: 10px;
+  height: 10px;
+  border: 5px solid transparent;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: transform 60ms ease-out;
+  background: url(data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20460.775%20460.775%22%20style%3D%22enable-background%3Anew%200%200%20460.775%20460.775%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20style%3D%22fill%3A%20%23808080%22%20d%3D%22M285.08%2C230.397L456.218%2C59.27c6.076-6.077%2C6.076-15.911%2C0-21.986L423.511%2C4.565c-2.913-2.911-6.866-4.55-10.992-4.55c-4.127%2C0-8.08%2C1.639-10.993%2C4.55l-171.138%2C171.14L59.25%2C4.565c-2.913-2.911-6.866-4.55-10.993-4.55c-4.126%2C0-8.08%2C1.639-10.992%2C4.55L4.558%2C37.284c-6.077%2C6.075-6.077%2C15.909%2C0%2C21.986l171.138%2C171.128L4.575%2C401.505c-6.074%2C6.077-6.074%2C15.911%2C0%2C21.986l32.709%2C32.719c2.911%2C2.911%2C6.865%2C4.55%2C10.992%2C4.55c4.127%2C0%2C8.08-1.639%2C10.994-4.55l171.117-171.12l171.118%2C171.12c2.913%2C2.911%2C6.866%2C4.55%2C10.993%2C4.55c4.128%2C0%2C8.081-1.639%2C10.992-4.55l32.709-32.719c6.074-6.075%2C6.074-15.909%2C0-21.986L285.08%2C230.397z%22%2F%3E%3C%2Fsvg%3E) center no-repeat;
+}
+
+.PostCreate .close-button:active {
+  transform: translateY(2px);
+}
+
+.PostCreate textarea {
+  resize: vertical;
+  color: inherit;
+  font: inherit;
+  border: none;
+  padding: 10px 20px 0 20px;
+  background-color: inherit;
+  width: 100%;
+  min-height: 80px;
+  max-height: 200px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.PostCreate .wrapper-bottom {
+  display: flex;
+  justify-content: end;
+}
+
+.PostCreate .post-button {
+  color: #444;
+  padding: 4px 8px;
+  transition: color 0.2s ease-out, transform 60ms ease-out;
+  cursor: pointer;
+  outline: none;
+  background: inherit;
+  border: none;
+  font: inherit;
+}
+
+.PostCreate:focus-within .post-button {
+  color: grey;
+}
+
+.PostCreate .post-button:focus,
+.PostCreate .post-button:hover {
+  color: var(--accent-color);
+}
+
+.PostCreate .post-button:active {
+  transform: translateY(2px);
+}

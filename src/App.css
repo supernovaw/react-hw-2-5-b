@@ -1,0 +1,5 @@
+.App {
+  width: calc(min(800px, 60vw));
+  margin: 100px auto 0 auto;
+  --accent-color: rgb(101, 233, 60)
+}

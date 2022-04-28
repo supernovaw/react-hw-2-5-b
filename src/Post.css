@@ -1,0 +1,24 @@
+.Post {
+  background-color: #222;
+  padding: 10px 20px;
+  margin: 15px 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px #00000077;
+}
+
+.Post .header {
+  display: flex;
+  align-content: space-around;
+  padding-bottom: 5px;
+}
+
+.Post .author {
+  flex: 1;
+  color: var(--accent-color);
+  cursor: default;
+}
+
+.Post .time {
+  color: grey;
+  font-size: 12px;
+}
